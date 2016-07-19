@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/todo_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.harshitbatra.to_do_list_assign.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/ettask"
+            android:layout_weight="2"
+            android:textColor="#000000"
+            android:hint="Enter the task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnadd"
+            android:text="Add"
+            android:textColor="#FFFBF5"
+            android:textSize="30sp"
+
+            android:layout_width="100dp"
+            android:layout_height="39dp"
+            android:background="@layout/shape"
+            android:shadowColor="#9EA8A3"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="23"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_below="@id/ll1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="2dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/etdate2"
+                android:hint="Date"
+                android:layout_weight="2"
+                android:focusable="false"
+                android:textColor="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btndate"
+                android:text="DATE"
+                android:textColor="#FFFBF5"
+                android:textSize="30dp"
+                android:layout_width="100dp"
+                android:layout_height="39dp"
+                android:background="@layout/shape"
+                android:shadowColor="#9EA8A3"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="23"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/ettime2"
+                android:hint="Time"
+                android:layout_weight="2"
+                android:focusable="false"
+                android:textColor="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btntime"
+                android:text="TIME"
+                android:textColor="#FFFBF5"
+                android:textSize="30sp"
+                android:layout_below="@id/ll2"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/btndate"
+                android:layout_width="100dp"
+                android:layout_height="39dp"
+                android:background="@layout/shape"
+                android:shadowColor="#9EA8A3"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="23"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lv1"
+        android:layout_below="@id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+</RelativeLayout>
